@@ -63,6 +63,7 @@ html {
 
 
 
+
 /* Medium and small screens (640px) */
 @media (min-width: 640px) {
   html { font-size: 112%; }
@@ -80,6 +81,9 @@ html {
 .container {
     margin: 0 auto;
     max-width: 64rem;
+}
+.container.narrow {
+    max-width: 56rem;
 }
 .column.full { width: 100%; }
  .column.two-thirds { width: 66.7%; }
