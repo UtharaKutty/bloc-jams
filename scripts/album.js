@@ -137,6 +137,7 @@ var findParentByClassName = function(element, targetClass) {
           else if (currentParent && (currentParent.className === targetClass)){
             console.log ("No parent found with that class name");
           }
+
         return currentParent;
       }
 };
