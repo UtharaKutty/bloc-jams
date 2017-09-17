@@ -151,7 +151,7 @@ var updatePlayerBarSong = function() {
 };
 
 
-
+var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
 var playerBarPlayButton = '<span class="ion-play"></span>';
 var playerBarPauseButton = '<span class="ion-pause"></span>';
 var currentAlbum = null;
@@ -169,7 +169,7 @@ var $playPause = $('.main-controls .play-pause');
     $nextButton.click(nextSong);
     $playPause.click(playSong);
   });
-
+// assignment CP 32 //
   var togglePlayFromPlayerBar = function(){
     if (currentlyPlayingSongNumber.isPaused()) {
      $(this).html(pauseButtonTemplate);
@@ -186,7 +186,7 @@ window.onload = function(){
   setCurrentAlbum(albumPicasso);
   var albums = [albumPicasso, albumMarconi, albumLove];
   var index = 1;
-  albumImage.addEventListener("click",, function(event) {
+  albumImage.addEventListener("click", function(event) {
     setCurrentAlbum(albums[index]);
     index++;
     if(index == albums.length){

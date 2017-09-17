@@ -27,7 +27,7 @@ var albumPicasso = {
          { title: 'Wrong phone number', duration: '2:15' }
      ]
  };
- var albumlove = {
+ var albumLove = {
      title: 'smile',
      artist: 'cher',
      label: 'happy',
